@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tableau de suivi GGD01</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="img\Gendarmerie_nationale_logo.svg.png" type="image/png">
+
+</head>
+<body>
+
+<!-- HEADER / MENU HORIZONTAL -->
+<header>
+  <div class="top-menu">
+    <div class="logo">
+      <a href="#"><img src="img/Gendarmerie_nationale_logo.svg.png" alt="Logo" /></a>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="menu-item has-submenu">
+          <a href="#">📦 Produits ▼</a>
+          <div class="submenu mega-menu">
+            <div class="column">
+              <a href="#">Produit 1</a>
+              <a href="#">Produit 2</a>
+              <a href="#">Produit 3</a>
+            </div>
+            <div class="column">
+              <a href="#">Produit 4</a>
+              <a href="#">Produit 5</a>
+              <a href="#">Produit 6</a>
+            </div>
+            <div class="column">
+              <a href="#">Produit 7</a>
+              <a href="#">Produit 8</a>
+              <a href="#">Produit 9</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="menu-item has-submenu">
+          <a href="#">🛠 Services ▼</a>
+          <div class="submenu mega-menu">
+            <div class="column">
+              <a href="#">Service A</a>
+              <a href="#">Service B</a>
+            </div>
+            <div class="column">
+              <a href="#">Service C</a>
+              <a href="#">Service D</a>
+            </div>
+            <div class="column">
+              <a href="#">Service E</a>
+              <a href="#">Service F</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">📞 Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bandeau défilant en dehors du <ul> -->
+    <div class="ticker-wrapper">
+      <div class="ticker">
+        <div class="ticker-inner">
+          ⚠️ En cas d'urgence, composez le 17 ! Votre appel peut être décisif !
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- CONTENU PRINCIPAL -->
+<main id="pageContent">
+  <h1 class="titre_centre">Tableau de suivi des transfèrements GGD01</h1>
+
+  <div class="bouton-container">
+    <button id="ajouterLigne" class="bouton-ajout-ligne">➕ Ajouter une ligne</button>
+  </div>
+
+  <table id="tableau">
+    <thead>
+      <tr>
+        <th>N° PULSAR</th>
+        <th>Date mail</th>
+        <th>Personnel référent</th>
+        <th>Type transfèrement</th>
+        <th>EPM</th>
+        <th>Date de la mission</th>
+        <th>Nom de l'individu</th>
+        <th>Type d'escorte</th>
+        <th>Lieu de mission</th>
+        <th colspan="5">Prise en compte</th>
+        <th>Nombre de personnels</th>
+        <th>Clôture PULSAR</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><textarea></textarea></td>
+        <td><textarea class="date-colonne" placeholder="JJ/MM/AAAA"></textarea></td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+        <td><textarea class="date-colonne" placeholder="JJ/MM/AAAA"></textarea></td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+        <td><input type="number" class="valeur" min="0"></td>
+        <td><input type="number" class="valeur" min="0"></td>
+        <td><input type="number" class="valeur" min="0"></td>
+        <td><input type="number" class="valeur" min="0"></td>
+        <td><input type="number" class="valeur" min="0"></td>
+        <td class="resultat"></td>
+        <td><textarea></textarea></td>
+        <td class="supprimer-cell"><button class="supprimer">❌</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="container">
+    <main>
+      <h2>Contenu principal supplémentaire</h2>
+      <p>Petit texte, histoire de meubler la page pour l'instant.</p>
+    </main>
+
+    <aside>
+      <h3>Une petite liste</h3>
+      <ul>
+        <li>📰 premier choix</li>
+        <li>📰 deuxième choix</li>
+        <li>📰 troisième choix (je m'arrête là, faut pas abuser non plus ;)</li>
+      </ul>
+    </aside>
+  </div>
+  <div>
+    <h3>Un petit lorem ipsum, pour combler le vide :</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero massa, mollis vel sem ut, faucibus imperdiet lorem. In hac habitasse platea dictumst. In aliquam augue elit, et euismod magna dignissim vel. Sed pretium orci in quam tincidunt, et ornare libero scelerisque. Aliquam sed mauris auctor, interdum purus at, condimentum risus. Donec sed condimentum mi, ac tempor enim. Mauris imperdiet libero ipsum, at laoreet dui sollicitudin non. Nunc eu varius lectus, pharetra pellentesque arcu.</p>
+
+    <p>Integer consectetur justo et urna ornare, sit amet eleifend nisi posuere. Etiam facilisis massa non enim aliquet pellentesque. Aliquam maximus risus ut feugiat tempus. Quisque blandit finibus egestas. Duis sit amet suscipit purus, nec tincidunt purus. Quisque nisi dui, faucibus vitae hendrerit sed, auctor a augue. Donec ornare ex ac posuere pellentesque. Maecenas quis aliquam nisl. Sed quis leo quis augue molestie mattis nec a quam. Praesent ac risus a enim sagittis laoreet. Donec convallis sem dolor, non ornare odio faucibus quis. Nulla quis sagittis tellus, sed pharetra tellus.</p>
+
+    <p>Etiam nulla erat, vestibulum a neque nec, viverra fringilla massa. Praesent malesuada ipsum id fermentum tempus. Aenean varius maximus mi, ac finibus lacus feugiat sit amet. In hac habitasse platea dictumst. Vestibulum malesuada erat vestibulum turpis suscipit eleifend. Nunc mattis enim aliquet justo ornare consectetur. Donec vel ligula tincidunt dolor vulputate pharetra ac vitae massa. Nam ultrices viverra gravida. Ut dapibus arcu ac massa condimentum, mollis placerat dui semper. Fusce molestie libero tellus, vel venenatis odio faucibus id. Maecenas iaculis finibus sapien, vitae auctor massa condimentum sed.</p>
+
+    <p>Etiam eget malesuada eros. Nulla non aliquam mi. In pulvinar eros vitae est lobortis lobortis. Integer nec laoreet tortor. Ut accumsan vitae lorem eu maximus. Nulla facilisi. Morbi non justo sed lorem lobortis aliquet sed quis nisl. Vestibulum vitae justo vitae purus hendrerit mattis. Donec tempor risus ex, iaculis molestie sapien porttitor sit amet.</p>
+
+    <p>Mauris tincidunt, elit in suscipit fermentum, orci urna posuere orci, ac porttitor velit massa non lorem. Nunc sed lorem nec nibh sollicitudin lacinia. Duis neque felis, dignissim in leo eget, congue posuere nulla. Integer in erat tincidunt, lobortis lorem et, suscipit libero. Praesent magna mauris, finibus sed sodales vitae, ornare at juste. Ut mattis, ex ac interdum convallis, nunc nunc convallis purus, posuere molestie elit nisl ac ex. Fusce volutpat dolor sit amet elit tincidunt, quis posuere turpis laoreet. Maecenas sit amet venenatis ipsum. Curabitur sed tristique tortor. Vestibulum ut justo vel nunc rhoncus tincidunt.</p>
+
+<!-- Continue de la même façon pour tous les autres paragraphes -->
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <!-- Colonne gauche -->
+    <div class="footer-col left">
+      <p>Vous pouvez consulter nos différents sites :</p>
+      <a href="https://www.gendarmerie.interieur.gouv.fr/recrutement" target="_blank" class="footer-link">notre site de recrutement</a>
+      <a href="https://www.gendarmerie.interieur.gouv.fr/" target="_blank" class="footer-link">notre site d'information</a>
+      <a href="https://cadetsgendarmerie01.fr/" target="_blank" class="footer-link">le site des cadets de la gendarmerie</a>
+      <p>Et vous pouvez également nous suivre sur nos réseaux sociaux :</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-google"></i></a>
+      </div>
+      <img src="img\appel_17.png" class="appel-urgence">
+    </div>
+
+    <!-- Séparateur vertical -->
+    <div class="footer-separator"></div>
+
+    <!-- Colonne droite -->
+    <div class="footer-col right">
+      <p>2 rue du colonel Arnaud Beltrame - 01000 BOURG-EN-BRESSE</p>
+      <p>Téléphone : 04 74 45 97 23</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.8896836964273!2d5.237627275803235!3d46.21264948319159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f3524f3813a6ed%3A0x99ba3d6405d0562e!2s2%20Rue%20Colonel%20Arnaud%20Beltrame%2C%2001000%20Bourg-en-Bresse!5e0!3m2!1sfr!2sfr!4v1768418078661!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!-- Ligne du bas pour droits d'auteur -->
+  <div class="footer-bottom">
+    © 2026 - Tous droits réservés
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
